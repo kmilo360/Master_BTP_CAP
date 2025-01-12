@@ -43,11 +43,4 @@ entity Availability : CodeList {
             NotInStock      = 'Not In Stock'; // 1
             LowAvailability = 'Low Availability'; // 2
         }
-};
-
-entity Reviews : cuid {
-    rating       : Decimal(3, 2);
-    creationDate : Date;
-    user         : String(20);
-    reviewText   : LargeString;
 }
