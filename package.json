@@ -1,0 +1,19 @@
+{
+  "name": "salesorders",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "https://github.com/kmilo360/Master_BTP_CAP.git",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^8.6.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.8.0",
+    "@cap-js/sqlite": "^1.7.8"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  }
+}
