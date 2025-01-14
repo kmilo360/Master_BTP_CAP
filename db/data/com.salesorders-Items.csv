@@ -1,0 +1,3 @@
+ID;name;description;releaseDate;discontinuedDate;price;currency;height;width;depth;quantity;unitOfMeasure;order_ID
+140ac324-5635-492b-90f6-7f640a07b1b8;overdrive;Pedal overdrive Guitarra;2020-04-17;2030-04-17;200.00;USD;2.000;2.000;3.00;3.00;CM;8d6caadb-9c86-478d-a3a8-6d38b69bab86
+ebb425a5-0c34-431d-b14c-1335fbe33b5e;delay;Pedal delay Guitarra;2020-04-17;2030-04-17;200.00;USD;2.000;2.000;3.00;3.00;CM;8d6caadb-9c86-478d-a3a8-6d38b69bab86

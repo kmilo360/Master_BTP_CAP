@@ -7,7 +7,6 @@ using {
 } from '@sap/cds/common';
 
 entity Orders : cuid, managed {
-    key id           : String(36);
         email        : String(30);
         firstName    : String(30);
         lasttName    : String(30);
@@ -18,11 +17,10 @@ entity Orders : cuid, managed {
         criticality  : Integer;
         imageUrl     : LargeString;
         toItems      : Association to many Items
-                           on toItems.orderId = $self;
+                           on toItems.order = $self;
 };
 
 entity Items : cuid {
-    key id               : String(36);
         name             : String(40);
         description      : String(40);
         releaseDate      : Date;
@@ -34,9 +32,12 @@ entity Items : cuid {
         depth            : Decimal(12, 2);
         quantity         : Decimal(16, 2);
         unitOfMeasure    : String(2) default 'CM';
-        orderId            : Association to Orders; //order_ID
+        order            : Association to Orders; //order_ID
 };
 
+/*
+* Entidades de ayuda
+ */
 entity Availability : CodeList {
     key code : String enum {
             InStock         = 'In Stock'; // 3
