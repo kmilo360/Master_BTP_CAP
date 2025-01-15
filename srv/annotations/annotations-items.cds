@@ -48,6 +48,46 @@ annotate projection.ItemsSet with @(
             {
                 $Type: 'UI.DataField',
                 Value: description
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: releaseDate
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: discontinuedDate
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: price
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: currency
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: height
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: width
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: depth
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: quantity
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: unitOfMeasure
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: order_ID
             }
         ],
         Label: 'Information'
