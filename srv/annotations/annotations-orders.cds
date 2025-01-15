@@ -60,7 +60,8 @@ annotate projection.OrdersSet with @(
             },
             {
                 $Type: 'UI.DataField',
-                Value: createon
+                Value: createon,
+                ![@Common.FieldControl] : { $edmJson : {$If : [ { $Eq : [ { $Path : 'HasActiveEntity'}, false ]}, 3, 1 ]}}
             },
             {
                 $Type: 'UI.DataField',
